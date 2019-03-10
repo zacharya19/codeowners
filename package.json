@@ -1,0 +1,46 @@
+{
+  "name": "codeowners",
+  "version": "1.0.0",
+  "description": "Same as github codeowners feature but without auto assignment, will just block the PR and comment with list of codeowners.",
+  "author": "Zacharya Haitin <zacharya19@gmail.com>",
+  "license": "ISC",
+  "repository": "https://github.com/zacharya19/codeowners.git",
+  "homepage": "https://github.com/zacharya19/codeowners",
+  "bugs": "https://github.com/zacharya19/codeowners/issues",
+  "main": "handler.js",
+  "keywords": [
+    "probot",
+    "github",
+    "probot-app"
+  ],
+  "scripts": {
+    "dev": "nodemon",
+    "start": "probot run ./index.js",
+    "lint": "standard --fix"
+  },
+  "dependencies": {
+    "@probot/serverless-gcf": "^0.2.0",
+    "ignore": "^5.0.5",
+    "probot": "^7.2.0"
+  },
+  "devDependencies": {
+    "nodemon": "^1.17.2",
+    "smee-client": "^1.0.2",
+    "standard": "^12.0.1"
+  },
+  "engines": {
+    "node": ">= 8.3.0"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "nodemonConfig": {
+    "exec": "npm start",
+    "watch": [
+      ".env",
+      "."
+    ]
+  }
+}
