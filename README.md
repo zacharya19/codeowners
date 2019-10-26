@@ -15,7 +15,6 @@ yarn start
 ## TODOs
 1. Add unit tests.
 2. Watch OWNER file changes to update existing PRs.
-3. In case of no codeowners or the PRs submitter is the codeowner need another message.
 
 ## Contributing
 
