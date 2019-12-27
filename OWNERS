@@ -1,0 +1,5 @@
+# Default owners
+* @zacharya19
+
+# Override for one file
+.gitignore @zacharya19
